@@ -10,11 +10,16 @@
         <option value="$PROJECT_DIR$/yuapi-client-sdk/pom.xml" />
         <option value="$PROJECT_DIR$/embedded-zookeeper/pom.xml" />
         <option value="$PROJECT_DIR$/yuapi-common/pom.xml" />
+        <option value="$PROJECT_DIR$/luojiaapi-backend/pom.xml" />
+        <option value="$PROJECT_DIR$/luojiaapi-client-sdk/pom.xml" />
+        <option value="$PROJECT_DIR$/luojiaapi-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/luojiaapi-gateway/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/embedded-zookeeper/pom.xml" />
+        <option value="$PROJECT_DIR$/yuapi-common/pom.xml" />
       </set>
     </option>
   </component>
