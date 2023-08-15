@@ -16,3 +16,13 @@ logging:
       springframework:
         cloud:
           gateway: info
+
+dubbo:
+  application:
+    name: yuapi-gateway
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: nacos://localhost:8848
+

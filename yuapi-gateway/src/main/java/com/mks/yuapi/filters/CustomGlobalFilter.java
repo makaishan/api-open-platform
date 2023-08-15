@@ -1,4 +1,4 @@
-package com.mks.yuapigateway.filters;
+package com.mks.yuapi.filters;
 
 import com.mks.yuapiclientsdk.utils.SignUtil;
 import lombok.extern.slf4j.Slf4j;

@@ -8,7 +8,14 @@
         <option value="$PROJECT_DIR$/yuapi-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/yuapi-interface/pom.xml" />
         <option value="$PROJECT_DIR$/yuapi-client-sdk/pom.xml" />
+        <option value="$PROJECT_DIR$/embedded-zookeeper/pom.xml" />
+        <option value="$PROJECT_DIR$/yuapi-common/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/embedded-zookeeper/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">

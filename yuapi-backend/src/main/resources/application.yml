@@ -99,3 +99,12 @@ yuapi:
   client:
     access-key: yupi
     secret-key: abcdefgh
+
+dubbo:
+  application:
+    name: yuapi-backend
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: nacos://localhost:8848
