@@ -1,25 +1,28 @@
 package com.mks.luojiaapi.model.enums;
 
+import org.apache.commons.lang3.ObjectUtils;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
-import org.apache.commons.lang3.ObjectUtils;
 
 /**
- * 文件上传业务类型枚举
+ * 用户角色枚举
  *
  * @author <a href="https://github.com/liyupi">程序员鱼皮</a>
  * @from <a href="https://yupi.icu">编程导航知识星球</a>
  */
-public enum FileUploadBizEnum {
+public enum UserRoleEnum {
 
-    USER_AVATAR("用户头像", "user_avatar");
+    USER("用户", "user"),
+    ADMIN("管理员", "admin"),
+    BAN("被封号", "ban");
 
     private final String text;
 
     private final String value;
 
-    FileUploadBizEnum(String text, String value) {
+    UserRoleEnum(String text, String value) {
         this.text = text;
         this.value = value;
     }
@@ -39,11 +42,11 @@ public enum FileUploadBizEnum {
      * @param value
      * @return
      */
-    public static FileUploadBizEnum getEnumByValue(String value) {
+    public static UserRoleEnum getEnumByValue(String value) {
         if (ObjectUtils.isEmpty(value)) {
             return null;
         }
-        for (FileUploadBizEnum anEnum : FileUploadBizEnum.values()) {
+        for (UserRoleEnum anEnum : UserRoleEnum.values()) {
             if (anEnum.value.equals(value)) {
                 return anEnum;
             }

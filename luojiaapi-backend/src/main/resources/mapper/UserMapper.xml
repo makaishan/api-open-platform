@@ -4,7 +4,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.mks.yuapi.mapper.UserMapper">
+<mapper namespace="com.mks.luojiaapi.mapper.UserMapper">
     <resultMap id="BaseResultMap" type="com.mks.luojiaapi.model.entity.User">
         <id property="id" column="id" jdbcType="BIGINT"/>
         <result property="userAccount" column="userAccount" jdbcType="VARCHAR"/>

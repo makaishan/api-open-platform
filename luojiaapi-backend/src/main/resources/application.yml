@@ -3,7 +3,7 @@
 # @from <a href="https://yupi.icu">编程导航知识星球</a>
 spring:
   application:
-    name: yuapi
+    name: luojiaapi
   # 默认 dev 环境
   profiles:
     active: dev
@@ -94,15 +94,15 @@ cos:
     region: xxx
     bucket: xxx
 
-# yuapi-client
-yuapi:
+# luojiaapi-client
+luojiaapi:
   client:
     access-key: yupi
     secret-key: abcdefgh
 
 dubbo:
   application:
-    name: yuapi-backend
+    name: luojiaapi-backend
   protocol:
     name: dubbo
     port: -1

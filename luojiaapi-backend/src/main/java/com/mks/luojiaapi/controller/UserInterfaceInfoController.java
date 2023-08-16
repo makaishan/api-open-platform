@@ -12,6 +12,7 @@ import com.mks.luojiaapi.model.dto.userInterfaceInfo.UserInterfaceInfoQueryReque
 import com.mks.luojiaapi.model.dto.userInterfaceInfo.UserInterfaceInfoUpdateRequest;
 import com.mks.luojiaapi.model.entity.UserInterfaceInfo;
 import com.mks.luojiaapi.model.entity.User;
+import com.mks.luojiaapi.service.InnerUserInterfaceInfoService;
 import com.mks.luojiaapi.service.UserInterfaceInfoService;
 import com.mks.luojiaapi.service.UserService;
 import lombok.extern.slf4j.Slf4j;

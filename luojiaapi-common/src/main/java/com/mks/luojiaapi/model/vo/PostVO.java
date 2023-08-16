@@ -3,11 +3,12 @@ package com.mks.luojiaapi.model.vo;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.mks.luojiaapi.model.entity.Post;
+import lombok.Data;
+import org.springframework.beans.BeanUtils;
+
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
-import lombok.Data;
-import org.springframework.beans.BeanUtils;
 
 /**
  * 帖子视图

@@ -7,6 +7,8 @@
     <file url="file://$PROJECT_DIR$/luojiaapi-backend/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/luojiaapi-client-sdk/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/luojiaapi-client-sdk/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/luojiaapi-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/luojiaapi-common/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/luojiaapi-gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/luojiaapi-gateway/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/luojiaapi-interface/src/main/java" charset="UTF-8" />

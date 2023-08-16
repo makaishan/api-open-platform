@@ -5,8 +5,8 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.mks.luojiaapi.common.ErrorCode;
 import com.mks.luojiaapi.exception.BusinessException;
 import com.mks.luojiaapi.model.entity.UserInterfaceInfo;
-import com.mks.luojiaapi.service.UserInterfaceInfoService;
 import com.mks.luojiaapi.mapper.UserInterfaceInfoMapper;
+import com.mks.luojiaapi.service.UserInterfaceInfoService;
 import org.springframework.stereotype.Service;
 
 /**
@@ -16,7 +16,7 @@ import org.springframework.stereotype.Service;
 */
 @Service
 public class UserInterfaceInfoServiceImpl extends ServiceImpl<UserInterfaceInfoMapper, UserInterfaceInfo>
-    implements UserInterfaceInfoService{
+    implements UserInterfaceInfoService {
 
     @Override
     public void validUserInterfaceInfo(UserInterfaceInfo userInterfaceInfo, boolean add) {
@@ -33,20 +33,6 @@ public class UserInterfaceInfoServiceImpl extends ServiceImpl<UserInterfaceInfoM
         if(userInterfaceInfo.getLeftNum() < 0) {
             throw new BusinessException(ErrorCode.PARAMS_ERROR, "剩余次数不能小于0");
         }
-    }
-
-    @Override
-    public boolean invokeCount(long interfaceInfoId, long userId) {
-        // 判断
-        if(interfaceInfoId <= 0 || userId <= 0) {
-            throw new BusinessException(ErrorCode.PARAMS_ERROR);
-        }
-        UpdateWrapper<UserInterfaceInfo> updateWrapper = new UpdateWrapper<>();
-        updateWrapper.eq("interfaceInfoId", interfaceInfoId);
-        updateWrapper.eq("userId", userId);
-        updateWrapper.gt("leftNum", 0);
-        updateWrapper.setSql("leftNum = leftNum - 1, totalNum = totalNum + 1");
-        return this.update(updateWrapper);
     }
 }
 

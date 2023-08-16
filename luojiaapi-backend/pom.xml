@@ -15,14 +15,19 @@
     <groupId>com.yupi</groupId>
     <artifactId>luojiaapi-backend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>yuapi-backend</name>
+    <name>luojiaapi-backend</name>
     <description>鱼皮接口</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
 
     <dependencies>
-        <!-- yuapi-client-sdk -->
+        <dependency>
+            <groupId>com.mks.luojiaapi</groupId>
+            <artifactId>luojiaapi-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!-- luojiaapi-client-sdk -->
         <dependency>
             <groupId>com.mks</groupId>
             <artifactId>luojiaapi-client-sdk</artifactId>
