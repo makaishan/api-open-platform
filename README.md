@@ -1,2 +1,2 @@
 # api-open-platform
-API开放平台
+珞珈API开放平台
