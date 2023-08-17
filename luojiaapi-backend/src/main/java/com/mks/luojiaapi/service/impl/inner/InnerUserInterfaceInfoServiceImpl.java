@@ -22,7 +22,7 @@ public class InnerUserInterfaceInfoServiceImpl implements InnerUserInterfaceInfo
         if(interfaceInfoId <= 0 || userId <= 0) {
             throw new BusinessException(ErrorCode.PARAMS_ERROR);
         }
-        // todo 若数据库中没有记录，先创建一条记录
+        // todo todo若数据库中没有记录，先创建一条记录
         UpdateWrapper<UserInterfaceInfo> updateWrapper = new UpdateWrapper<>();
         updateWrapper.eq("interfaceInfoId", interfaceInfoId);
         updateWrapper.eq("userId", userId);
