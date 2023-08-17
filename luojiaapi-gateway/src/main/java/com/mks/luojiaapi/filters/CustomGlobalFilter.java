@@ -113,6 +113,7 @@ public class CustomGlobalFilter implements GlobalFilter, Ordered {
         if(interfaceInfo == null) {
             return handleNoAuth(response);
         }
+        // todo todo判断是否还有调用次数
         // 5.请求转发, 调用接口
         return handleResponse(exchange, chain, interfaceInfo.getId(), invokeUser.getId());
     }
@@ -158,7 +159,7 @@ public class CustomGlobalFilter implements GlobalFilter, Ordered {
                                 return bufferFactory.wrap(content);
                             }));
                         } else {
-                            // todo 8.调用失败，返回一个规范的错误码
+                            // todo todo 8.调用失败，返回一个规范的错误码
                             log.error("<--- {} 响应code异常", getStatusCode());
                         }
                         return super.writeWith(body);
